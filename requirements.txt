@@ -14,7 +14,7 @@ tronpy==0.4.0
 bitcoinlib==0.6.12          # ✅ BTC support (testnet & mainnet)
 
 # ISO 8583 Parsing
-starkbank-iso8583==2.2.0    # ✅ Required for ISO MTI parsing
+starkbank-iso8583==0.6.0    # ✅ Required for ISO MTI parsing
 
 # Cryptographic Dependencies
 cryptography==41.0.3
