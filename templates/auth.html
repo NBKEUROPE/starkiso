@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Authorization Code</title></head>
+<body>
+    <h2>Customer Authorization</h2>
+    {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+    <form method="post">
+        <label>Enter {{ required_len }}-digit Auth Code:</label><br>
+        <input type="text" name="authcode" maxlength="{{ required_len }}" required><br><br>
+        <button type="submit">Authorize</button>
+    </form>
+</body>
+</html>

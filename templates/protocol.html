@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Select Protocol</title></head>
+<body>
+    <h2>Select POS Terminal Protocol</h2>
+    <form method="post">
+        <label>Protocol Type:</label><br>
+        <select name="protocol" required>
+            {% for protocol in protocols %}
+            <option value="{{ protocol }}">{{ protocol }}</option>
+            {% endfor %}
+        </select><br><br>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>
