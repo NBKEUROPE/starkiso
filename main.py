@@ -1,6 +1,6 @@
 from flask import Flask
 from iso_server.server import start_iso_server
-from app.routes import app as flask_app
+from app-routes import app as flask_app
 
 app = Flask(__name__)
 app.secret_key = 'blackrock-secret'
